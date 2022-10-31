@@ -1,0 +1,13 @@
+Q.what is schema ?
+==> A mongoose schema defines the structure of the document , default values ,validators,etc.
+
+Basically to define the value of the field
+suppose i have one field as name then the value of that field will be the string 
+so defining the datatypes of the field
+
+
+Q.What is Model?
+==> A mongoose model is a wrapper on the Mongooes schema .
+==> A mongoose schema defines the structure of the document,dfault values , validators,etc.whereas  a mongoose model provides an intetface to the database for creating,querying ,updating,deleting records ,etc.
+
+Basically creating models is nothing but creating a collection
