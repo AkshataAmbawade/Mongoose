@@ -94,7 +94,16 @@ const Playlist = mongoose.model('Playlist', playlistSchema);
 //     // .skip(1)
 //     console.log(result)
 // }
-// getDocument();
+// getDocument();const getData = async () => {
+//     try {
+//         const result = await Namelist.find().limit(1).skip(1).select({ name: 1, _id: 0 })
+//         console.log(result)
+//     } catch (err) {
+//         console.log(err)
+//     }
+// }
+// getData();
+
 
 //Comparison operator
 
@@ -298,7 +307,7 @@ const Playlist = mongoose.model('Playlist', playlistSchema);
 // the string should be in between the minlength and the maxlength
 // const createDocument = async () => {
 //     try {
-//         const clanuage = await Playlist({
+//         const clanuage = new Playlist({
 //             name: "c language",
 //             ctype: "Back End",
 //             videos: 25,
@@ -320,7 +329,7 @@ const Playlist = mongoose.model('Playlist', playlistSchema);
 
 // const createDocument = async () => {
 //     try {
-//         const abc = await Playlist({
+//         const abc = new Playlist({
 //             name: ".net",
 //             ctype: "Back End",
 //             videos: 25,
@@ -339,7 +348,7 @@ const Playlist = mongoose.model('Playlist', playlistSchema);
 
 // const createDocument = async () => {
 //     try {
-//         const php = await Playlist({
+//         const php = new Playlist({
 //             name: "PHP",
 //             ctype: "Back End",
 //             videos: -25,
@@ -360,7 +369,7 @@ const Playlist = mongoose.model('Playlist', playlistSchema);
 //first install the validator by giving command npm i validator
 // const createDocument = async () => {
 //     try {
-//         const add = await Playlist({
+//         const add = new  Playlist({
 //             name: "jhgugjk",
 //             ctype: "Back End",
 //             videos: 25,
