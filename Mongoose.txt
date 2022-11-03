@@ -1,16 +1,16 @@
 Q.What is Mongoose 
---> It helps us to establish aa connection between the NodeJs and mongodb
+--> It helps us to establish a connection between the NodeJs and mongodb
 
--Mongoose is an Object Data modeling(ODM) library for mongodb and NodeJs . It manages relationship between data , provides schema validatin , and is used to translate between objects in code and the representation of those object is MongoDb
-
-
+-Mongoose is an Object Data modeling(ODM) library for mongodb and NodeJs . It manages relationship between data , provides schema validator, and is used to translate between objects in code and the representation of those object is MongoDb
 
 
 
 
-First create a Mongoose folder then inside that folder create one more folder named it as src inside src create api.js
-Now initialized npm   by using command npm init
-Then install Mongoose by using command npm i mongoose
+
+
+First create a Mongoose folder then inside that folder create one more folder named it as src inside src create app.js
+Now initialized npm   by using command ===> npm init
+Then install Mongoose by using command ===>npm i mongoose
 
 Then in app.js 
 -First require mongoose
@@ -26,6 +26,7 @@ this will return pormise to avoid that use
 })
 -fifth create schema 
 const nameList = new mongoose.Schema({})
+
 -Sixth create model /collection 
  const Namelist = new mongoose.model("Namelist", nameList)
  -create document(refer app.js)

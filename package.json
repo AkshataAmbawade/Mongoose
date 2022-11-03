@@ -9,6 +9,7 @@
   "author": "Akshata",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^6.7.0"
+    "mongoose": "^6.7.0",
+    "validator": "^13.7.0"
   }
 }
