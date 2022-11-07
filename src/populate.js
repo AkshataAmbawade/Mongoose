@@ -71,9 +71,30 @@ const Subjectsname = new mongoose.model("Subjects", subjectS)
 
 // addDoc();
 
+// const findD = async () => {
+//     try {
+//         const result = await Subjectsname.find().populate('student')
+//         console.log(result)
+//     }
+//     catch (err) { console.log(err.message) }
+// }
+// findD()
+
+//for $lookup
+
 const findD = async () => {
     try {
-        const result = await Subjectsname.find().populate('student')
+        const result = await Subjectsname.aggregate([
+            {
+                $lookup: {
+                    from: 'studentlists',
+                    localField: 'student',
+                    foreignField: '_id',
+                    as: 'anything'
+                }
+            },
+            {$unwind:'$anything'}
+        ])
         console.log(result)
     }
     catch (err) { console.log(err.message) }
